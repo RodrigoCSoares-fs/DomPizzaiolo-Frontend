@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body *{
+  box-sizing: border-box;
+}
+.main-register{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+ 
+}
+
+.left-register-back{
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-register-back span{
+  font-size: 2.5rem;
+  color: #ED686E;
+}
+
+.left-register-back span:hover{
+  color: #ED1921;
+}
+
+.left-register{
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(pizzafriends.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.right-register{
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+
+.card-register{
+  background-color: #fff;
+  min-width: 30vw;
+  min-height: 70vh;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2) ;
+  padding: 2rem;
+  border-radius: 8px;
+  opacity: 98%;
+
+}
+
+.card-register h1{
+  font-weight: 600;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.card-register h1::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 25px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 8px;
+  background-color: #EA1D2C;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field{
+  position: relative;
+}
+
+.input-field input{
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  width: 90%;
+}
+
+.input-field input::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form .input-field{
+  margin-bottom: 2rem;
+}
+
+.input-field .underline::before{
+  content: "";
+  position:absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+
+}
+
+.input-field .underline::after{
+  content: "";
+  position:absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background-color: #EA1D2C;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transition: all 0.9s ease;
+  transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+  transform: scaleX(1);
+}
+
+form input[type="submit"]{
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  background-color: #EA1D2C;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.9s ease;
+}
+
+form input[type="submit"]:hover{
+  
+  letter-spacing: 0.9px;
+  font-weight: 400;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.register a{
+  text-decoration: none;
+  color: rgba(203, 46, 46, 0.851);
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.register a:hover{
+  font-weight: bolder;
+}
+
+.register{
+  margin-bottom: 0.4rem;
+}
+
+.password-remember a{
+  text-decoration: none;
+  color: rgba(15, 15, 15, 0.505);
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.password-remember a:hover{
+  text-decoration: underline;
+}
+
+.texto h2{
+  color: #EA1D2C;
+  margin-top: 2.4rem;
+  font-size: 1.3rem;
+  text-align: left;
+  letter-spacing: 0.15rem ;
+  
+}
+
+@media only screen and (max-width: 950px){
+  .card-register{
+    width: 85%;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+  .main-register{
+    flex-direction: column;
+  }
+
+  .left-register{
+    display: none
+  }
+
+  .right-register{
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .main-register{
+    flex-direction: column;
+  }
+
+  .left-register{
+    display: none;
+  }
+
+  .right-register{
+    width: 100%;
+    height: auto;
+    background: none;
+  }
+}
+
+
+
