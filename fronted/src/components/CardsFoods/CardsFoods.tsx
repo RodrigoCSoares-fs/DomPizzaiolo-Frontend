@@ -1,5 +1,9 @@
 import { Card } from "./styled";
 
+interface Card {
+  image: string;
+}
+
 export function CardsFoods() {
   return (
     <Card>
@@ -9,7 +13,10 @@ export function CardsFoods() {
           <h1>Pizza Napoli</h1>
         </div>
 
-        <div className="card-price"></div>
+        <div className="Card-price">
+          <div>R$50,00</div>
+          <a href="#">Adicionar</a>
+        </div>
       </div>
     </Card>
   );

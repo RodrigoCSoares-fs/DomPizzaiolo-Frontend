@@ -1,14 +1,13 @@
-import "./Client.css";
-
 import { Navegation } from "../Navegation/Navegation";
 import { CardsFoods } from "../CardsFoods/CardsFoods";
+import { Container, ContainerCard } from "./styled";
 
 export function Client() {
   return (
-    <div className="Foods">
+    <Container>
       <Navegation />
 
-      <div className="Cards-Foods-Global">
+      <ContainerCard>
         <CardsFoods />
         <CardsFoods />
         <CardsFoods />
@@ -24,7 +23,7 @@ export function Client() {
         <CardsFoods />
         <CardsFoods />
         <CardsFoods />
-      </div>
-    </div>
+      </ContainerCard>
+    </Container>
   );
 }
